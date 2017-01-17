@@ -36,4 +36,8 @@ app.get('/:data', (req, res) => {
   }
 })
 
+app.get('/', (req, res) => {
+  res.end('Please format call as /dateString or /unixTime')
+})
+
 app.listen(process.env.PORT || 5000)
